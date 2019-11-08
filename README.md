@@ -10,7 +10,10 @@
 
 * 《数据库在线答题实验平台系统》是一个采用C#语言实现后台开发，HTML5及jQuery实现前端开发，同时应用easyUI框架的B/S模式管理系统。
 * 本系统分为管理端和学生端。管理端主要功能为对班级、试题、试卷、学生练习、学生考试以及答题反馈的管理，学生端主要功能为练习模式和考试模式的在线答题系统。
+
 #### 数据库表设计
+
+![Image text](../pic/biao.png)
 
     teacher_info: 教师信息
     stu_info：学生信息
@@ -32,6 +35,9 @@
     
 功能设计
 -----
+
+![Image text](../pic/gongneng.pdf)
+
 #### 学生端主要功能
 
 * 课后练习：练习模式不将答题分数作为重点，而是为了引导学生做对题目，加深对SQL语言的理解，所以学生可在该模式下无限次输入答案，并通过下方的答题反馈优化自己的答案直至完全正确。
@@ -49,3 +55,39 @@
 
 具体实现
 ----
+#### 学生端
+
+* 课后练习模式
+
+![Image text](../pic/s_prac.pdf)
+
+* 考试测评模式
+
+![Image text](../pic/s_prac.pdf)
+
+#### 管理端
+
+* 班级管理
+
+![Image text](../pic/t_stu.pdf)
+
+* 题库管理
+
+![Image text](../pic/t_ques.pdf)
+
+* 试卷管理
+
+![Image text](../pic/t_paper.pdf)
+
+* 课后练习
+
+![Image text](../pic/t_prac.pdf)
+
+* 考试管理
+
+![Image text](../pic/t_test.pdf)
+
+* 学生反馈
+
+![Image text](../pic/t_feedback.pdf)
+![Image text](../pic/t_feedback1.pdf)
