@@ -1,0 +1,1 @@
+SELECT * FROM WHERE SDEPT='信息学院'&exit

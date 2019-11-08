@@ -1,0 +1,771 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="moocModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="class">
+      <EntityTypeMapping TypeName="moocModel.class">
+        <MappingFragment StoreEntitySet="class">
+          <ScalarProperty Name="tea_id" ColumnName="tea_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="class_name" ColumnName="class_name" />
+          <ScalarProperty Name="describe" ColumnName="describe" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="college_info">
+      <EntityTypeMapping TypeName="moocModel.college_info">
+        <MappingFragment StoreEntitySet="college_info">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="college_name" ColumnName="college_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="qbase_chapter">
+      <EntityTypeMapping TypeName="moocModel.qbase_chapter">
+        <MappingFragment StoreEntitySet="qbase_chapter">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="setid" ColumnName="setid" />
+          <ScalarProperty Name="chap_name" ColumnName="chap_name" />
+          <ScalarProperty Name="describe" ColumnName="describe" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="qbase_set">
+      <EntityTypeMapping TypeName="moocModel.qbase_set">
+        <MappingFragment StoreEntitySet="qbase_set">
+          <ScalarProperty Name="describe" ColumnName="describe" />
+          <ScalarProperty Name="admin_id" ColumnName="admin_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="set_name" ColumnName="set_name" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+          <ScalarProperty Name="isopen" ColumnName="isopen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="question">
+      <EntityTypeMapping TypeName="moocModel.question">
+        <MappingFragment StoreEntitySet="question">
+          <ScalarProperty Name="output" ColumnName="output" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+          <ScalarProperty Name="totvalue" ColumnName="totvalue" />
+          <ScalarProperty Name="check_sentence" ColumnName="check_sentence" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="chap_id" ColumnName="chap_id" />
+          <ScalarProperty Name="q_type" ColumnName="q_type" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="right_answer" ColumnName="right_answer" />
+          <ScalarProperty Name="ans1" ColumnName="ans1" />
+          <ScalarProperty Name="ans2" ColumnName="ans2" />
+          <ScalarProperty Name="ans3" ColumnName="ans3" />
+          <ScalarProperty Name="ans4" ColumnName="ans4" />
+          <ScalarProperty Name="ans5" ColumnName="ans5" />
+          <ScalarProperty Name="ans6" ColumnName="ans6" />
+          <ScalarProperty Name="hard_level" ColumnName="hard_level" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stu_class">
+      <EntityTypeMapping TypeName="moocModel.stu_class">
+        <MappingFragment StoreEntitySet="stu_class">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="stu_id" ColumnName="stu_id" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stu_info">
+      <EntityTypeMapping TypeName="moocModel.stu_info">
+        <MappingFragment StoreEntitySet="stu_info">
+          <ScalarProperty Name="lastTime" ColumnName="lastTime" />
+          <ScalarProperty Name="lastIP" ColumnName="lastIP" />
+          <ScalarProperty Name="stu_num" ColumnName="stu_num" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="phonenum" ColumnName="phonenum" />
+          <ScalarProperty Name="emailaddress" ColumnName="emailaddress" />
+          <ScalarProperty Name="college_id" ColumnName="college_id" />
+          <ScalarProperty Name="major" ColumnName="major" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="teacher_class">
+      <EntityTypeMapping TypeName="moocModel.teacher_class">
+        <MappingFragment StoreEntitySet="teacher_class">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tea_id" ColumnName="tea_id" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="teacher_info">
+      <EntityTypeMapping TypeName="moocModel.teacher_info">
+        <MappingFragment StoreEntitySet="teacher_info">
+          <ScalarProperty Name="lastIP" ColumnName="lastIP" />
+          <ScalarProperty Name="lastTime" ColumnName="lastTime" />
+          <ScalarProperty Name="tea_user" ColumnName="tea_user" />
+          <ScalarProperty Name="tea_name" ColumnName="tea_name" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="college_id" ColumnName="college_id" />
+          <ScalarProperty Name="tea_level" ColumnName="tea_level" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_account">
+      <EntityTypeMapping TypeName="moocModel.user_account">
+        <MappingFragment StoreEntitySet="user_account">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="account" ColumnName="account" />
+          <ScalarProperty Name="cname" ColumnName="cname" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="level" ColumnName="level" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionName="moocModel.Store.Fun_String2ToStringArray" FunctionImportName="Fun_String2ToStringArray">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="moocModel.Fun_String2ToStringArray_Result">
+          <ScalarProperty Name="item" ColumnName="item" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="MassInsertStu" FunctionName="moocModel.Store.MassInsertStu" />
+    <EntitySetMapping Name="NOTICE">
+      <EntityTypeMapping TypeName="moocModel.NOTICE">
+        <MappingFragment StoreEntitySet="NOTICE">
+          <ScalarProperty Name="ntime" ColumnName="ntime" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="tea_id" ColumnName="tea_id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="notice_stu_class">
+      <EntityTypeMapping TypeName="moocModel.notice_stu_class">
+        <MappingFragment StoreEntitySet="notice_stu_class">
+          <ScalarProperty Name="isread" ColumnName="isread" />
+          <ScalarProperty Name="stu_id" ColumnName="stu_id" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="notice_id" ColumnName="notice_id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="MakeNotice" FunctionName="moocModel.Store.MakeNotice" />
+    <EntitySetMapping Name="teainfo">
+      <EntityTypeMapping TypeName="moocModel.teainfo">
+        <MappingFragment StoreEntitySet="teainfo">
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="lastIP" ColumnName="lastIP" />
+          <ScalarProperty Name="lastTime" ColumnName="lastTime" />
+          <ScalarProperty Name="college_name" ColumnName="college_name" />
+          <ScalarProperty Name="tea_level" ColumnName="tea_level" />
+          <ScalarProperty Name="tea_name" ColumnName="tea_name" />
+          <ScalarProperty Name="tea_user" ColumnName="tea_user" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="classinfo">
+      <EntityTypeMapping TypeName="moocModel.classinfo">
+        <MappingFragment StoreEntitySet="classinfo">
+          <ScalarProperty Name="tea_name" ColumnName="tea_name" />
+          <ScalarProperty Name="s_count" ColumnName="s_count" />
+          <ScalarProperty Name="tea_id" ColumnName="tea_id" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+          <ScalarProperty Name="describe" ColumnName="describe" />
+          <ScalarProperty Name="class_name" ColumnName="class_name" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StuClass">
+      <EntityTypeMapping TypeName="moocModel.StuClass">
+        <MappingFragment StoreEntitySet="StuClass">
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="stu_num" ColumnName="stu_num" />
+          <ScalarProperty Name="lastTime" ColumnName="lastTime" />
+          <ScalarProperty Name="lastIP" ColumnName="lastIP" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="stu_id" ColumnName="stu_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="background">
+      <EntityTypeMapping TypeName="moocModel.background">
+        <MappingFragment StoreEntitySet="background">
+          <ScalarProperty Name="db" ColumnName="db" />
+          <ScalarProperty Name="detail" ColumnName="detail" />
+          <ScalarProperty Name="describe" ColumnName="describe" />
+          <ScalarProperty Name="sql" ColumnName="sql" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="qbasechapter">
+      <EntityTypeMapping TypeName="moocModel.qbasechapter">
+        <MappingFragment StoreEntitySet="qbasechapter">
+          <ScalarProperty Name="detail" ColumnName="detail" />
+          <ScalarProperty Name="back_describe" ColumnName="back_describe" />
+          <ScalarProperty Name="describe" ColumnName="describe" />
+          <ScalarProperty Name="q_count" ColumnName="q_count" />
+          <ScalarProperty Name="chap_name" ColumnName="chap_name" />
+          <ScalarProperty Name="set_name" ColumnName="set_name" />
+          <ScalarProperty Name="back_id" ColumnName="back_id" />
+          <ScalarProperty Name="setid" ColumnName="setid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="qbaseset">
+      <EntityTypeMapping TypeName="moocModel.qbaseset">
+        <MappingFragment StoreEntitySet="qbaseset">
+          <ScalarProperty Name="describe" ColumnName="describe" />
+          <ScalarProperty Name="isopen" ColumnName="isopen" />
+          <ScalarProperty Name="qbase_count" ColumnName="qbase_count" />
+          <ScalarProperty Name="tea_name" ColumnName="tea_name" />
+          <ScalarProperty Name="admin_id" ColumnName="admin_id" />
+          <ScalarProperty Name="set_name" ColumnName="set_name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK__qbase_cha__back___17036CC0" TypeName="moocModel.FK__qbase_cha__back___17036CC0" StoreEntitySet="qbase_chapter">
+      <EndProperty Name="qbase_chapter">
+        <ScalarProperty Name="id" ColumnName="id" />
+      </EndProperty>
+      <EndProperty Name="background">
+        <ScalarProperty Name="id" ColumnName="back_id" />
+      </EndProperty>
+      <Condition ColumnName="back_id" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="ques">
+      <EntityTypeMapping TypeName="moocModel.ques">
+        <MappingFragment StoreEntitySet="ques">
+          <ScalarProperty Name="detail" ColumnName="detail" />
+          <ScalarProperty Name="output" ColumnName="output" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+          <ScalarProperty Name="totvalue" ColumnName="totvalue" />
+          <ScalarProperty Name="back_describe" ColumnName="back_describe" />
+          <ScalarProperty Name="chap_name" ColumnName="chap_name" />
+          <ScalarProperty Name="check_sentence" ColumnName="check_sentence" />
+          <ScalarProperty Name="hard_level" ColumnName="hard_level" />
+          <ScalarProperty Name="ans6" ColumnName="ans6" />
+          <ScalarProperty Name="ans5" ColumnName="ans5" />
+          <ScalarProperty Name="ans4" ColumnName="ans4" />
+          <ScalarProperty Name="ans3" ColumnName="ans3" />
+          <ScalarProperty Name="ans2" ColumnName="ans2" />
+          <ScalarProperty Name="ans1" ColumnName="ans1" />
+          <ScalarProperty Name="right_answer" ColumnName="right_answer" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="q_type" ColumnName="q_type" />
+          <ScalarProperty Name="chap_id" ColumnName="chap_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ques_judge">
+      <EntityTypeMapping TypeName="moocModel.ques_judge">
+        <MappingFragment StoreEntitySet="ques_judge">
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="judge_sentence" ColumnName="judge_sentence" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_ques_judge_ToTable" TypeName="moocModel.FK_ques_judge_ToTable" StoreEntitySet="ques_judge">
+      <EndProperty Name="ques_judge">
+        <ScalarProperty Name="id" ColumnName="id" />
+      </EndProperty>
+      <EndProperty Name="question">
+        <ScalarProperty Name="id" ColumnName="ques_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="teapaper">
+      <EntityTypeMapping TypeName="moocModel.teapaper">
+        <MappingFragment StoreEntitySet="teapaper">
+          <ScalarProperty Name="tea_level" ColumnName="tea_level" />
+          <ScalarProperty Name="tea_name" ColumnName="tea_name" />
+          <ScalarProperty Name="admin_tea" ColumnName="admin_tea" />
+          <ScalarProperty Name="pcount" ColumnName="pcount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="paper">
+      <EntityTypeMapping TypeName="moocModel.paper">
+        <MappingFragment StoreEntitySet="paper">
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+          <ScalarProperty Name="isopen" ColumnName="isopen" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="paper_name" ColumnName="paper_name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_paper_ToTable" TypeName="moocModel.FK_paper_ToTable" StoreEntitySet="paper">
+      <EndProperty Name="paper">
+        <ScalarProperty Name="id" ColumnName="id" />
+      </EndProperty>
+      <EndProperty Name="teacher_info">
+        <ScalarProperty Name="id" ColumnName="admin_tea" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="paperquestion">
+      <EntityTypeMapping TypeName="moocModel.paperquestion">
+        <MappingFragment StoreEntitySet="paperquestion">
+          <ScalarProperty Name="qcount" ColumnName="qcount" />
+          <ScalarProperty Name="isopen" ColumnName="isopen" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="paper_name" ColumnName="paper_name" />
+          <ScalarProperty Name="admin_tea" ColumnName="admin_tea" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="paper_ques">
+      <EntityTypeMapping TypeName="moocModel.paper_ques">
+        <MappingFragment StoreEntitySet="paper_ques">
+          <ScalarProperty Name="nowvalue" ColumnName="nowvalue" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK__paper_que__paper__53D770D6" TypeName="moocModel.FK__paper_que__paper__53D770D6" StoreEntitySet="paper_ques">
+      <EndProperty Name="paper_ques">
+        <ScalarProperty Name="id" ColumnName="id" />
+      </EndProperty>
+      <EndProperty Name="paper">
+        <ScalarProperty Name="id" ColumnName="paper_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK__paper_que__ques___54CB950F" TypeName="moocModel.FK__paper_que__ques___54CB950F" StoreEntitySet="paper_ques">
+      <EndProperty Name="paper_ques">
+        <ScalarProperty Name="id" ColumnName="id" />
+      </EndProperty>
+      <EndProperty Name="question">
+        <ScalarProperty Name="id" ColumnName="ques_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="exam">
+      <EntityTypeMapping TypeName="moocModel.exam">
+        <MappingFragment StoreEntitySet="exam">
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+          <ScalarProperty Name="test_time" ColumnName="test_time" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exam_class">
+      <EntityTypeMapping TypeName="moocModel.exam_class">
+        <MappingFragment StoreEntitySet="exam_class">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exam_paper">
+      <EntityTypeMapping TypeName="moocModel.exam_paper">
+        <MappingFragment StoreEntitySet="exam_paper">
+          <ScalarProperty Name="israndom" ColumnName="israndom" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_exam_class_Toclass" TypeName="moocModel.FK_exam_class_Toclass" StoreEntitySet="exam_class">
+      <EndProperty Name="exam_class">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <EndProperty Name="class">
+        <ScalarProperty Name="class_id" ColumnName="class_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_exam_class_Toexam" TypeName="moocModel.FK_exam_class_Toexam" StoreEntitySet="exam_class">
+      <EndProperty Name="exam_class">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <EndProperty Name="exam">
+        <ScalarProperty Name="Id" ColumnName="exam_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_exam_paper_Toexam" TypeName="moocModel.FK_exam_paper_Toexam" StoreEntitySet="exam_paper">
+      <EndProperty Name="exam_paper">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <EndProperty Name="exam">
+        <ScalarProperty Name="Id" ColumnName="exam_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_exam_paper_Topaper" TypeName="moocModel.FK_exam_paper_Topaper" StoreEntitySet="exam_paper">
+      <EndProperty Name="exam_paper">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <EndProperty Name="paper">
+        <ScalarProperty Name="id" ColumnName="paper_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="examclass">
+      <EntityTypeMapping TypeName="moocModel.examclass">
+        <MappingFragment StoreEntitySet="examclass">
+          <ScalarProperty Name="tea_name" ColumnName="tea_name" />
+          <ScalarProperty Name="college_id" ColumnName="college_id" />
+          <ScalarProperty Name="test_time" ColumnName="test_time" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="class_name" ColumnName="class_name" />
+          <ScalarProperty Name="tea_id" ColumnName="tea_id" />
+          <ScalarProperty Name="exam_id" ColumnName="exam_id" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="practiceclass">
+      <EntityTypeMapping TypeName="moocModel.practiceclass">
+        <MappingFragment StoreEntitySet="practiceclass">
+          <ScalarProperty Name="test_time" ColumnName="test_time" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="class_name" ColumnName="class_name" />
+          <ScalarProperty Name="college_id" ColumnName="college_id" />
+          <ScalarProperty Name="tea_name" ColumnName="tea_name" />
+          <ScalarProperty Name="tea_id" ColumnName="tea_id" />
+          <ScalarProperty Name="exam_id" ColumnName="exam_id" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stuinfo">
+      <EntityTypeMapping TypeName="moocModel.stuinfo">
+        <MappingFragment StoreEntitySet="stuinfo">
+          <ScalarProperty Name="lastTime" ColumnName="lastTime" />
+          <ScalarProperty Name="lastIP" ColumnName="lastIP" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+          <ScalarProperty Name="major" ColumnName="major" />
+          <ScalarProperty Name="college_id" ColumnName="college_id" />
+          <ScalarProperty Name="emailaddress" ColumnName="emailaddress" />
+          <ScalarProperty Name="phonenum" ColumnName="phonenum" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="stu_num" ColumnName="stu_num" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stuexam">
+      <EntityTypeMapping TypeName="moocModel.stuexam">
+        <MappingFragment StoreEntitySet="stuexam">
+          <ScalarProperty Name="ec_id" ColumnName="ec_id" />
+          <ScalarProperty Name="stu_id" ColumnName="stu_id" />
+          <ScalarProperty Name="class_id" ColumnName="class_id" />
+          <ScalarProperty Name="exam_id" ColumnName="exam_id" />
+          <ScalarProperty Name="test_time" ColumnName="test_time" />
+          <ScalarProperty Name="end_time" ColumnName="end_time" />
+          <ScalarProperty Name="start_time" ColumnName="start_time" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stupaperques">
+      <EntityTypeMapping TypeName="moocModel.stupaperques">
+        <MappingFragment StoreEntitySet="stupaperques">
+          <ScalarProperty Name="ans6" ColumnName="ans6" />
+          <ScalarProperty Name="ans5" ColumnName="ans5" />
+          <ScalarProperty Name="ans2" ColumnName="ans2" />
+          <ScalarProperty Name="ans3" ColumnName="ans3" />
+          <ScalarProperty Name="ans4" ColumnName="ans4" />
+          <ScalarProperty Name="ans1" ColumnName="ans1" />
+          <ScalarProperty Name="detail" ColumnName="detail" />
+          <ScalarProperty Name="output" ColumnName="output" />
+          <ScalarProperty Name="stu_ans" ColumnName="stu_ans" />
+          <ScalarProperty Name="wrongtype" ColumnName="wrongtype" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="right_answer" ColumnName="right_answer" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="q_type" ColumnName="q_type" />
+          <ScalarProperty Name="eid" ColumnName="eid" />
+          <ScalarProperty Name="pqid" ColumnName="pqid" />
+          <ScalarProperty Name="stu_id" ColumnName="stu_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stupaperques_prac">
+      <EntityTypeMapping TypeName="moocModel.stupaperques_prac">
+        <MappingFragment StoreEntitySet="stupaperques_prac">
+          <ScalarProperty Name="stu_ans" ColumnName="stu_ans" />
+          <ScalarProperty Name="wrongtype" ColumnName="wrongtype" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="detail" ColumnName="detail" />
+          <ScalarProperty Name="output" ColumnName="output" />
+          <ScalarProperty Name="right_answer" ColumnName="right_answer" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="q_type" ColumnName="q_type" />
+          <ScalarProperty Name="eid" ColumnName="eid" />
+          <ScalarProperty Name="pqid" ColumnName="pqid" />
+          <ScalarProperty Name="stu_id" ColumnName="stu_id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stu_ans_count">
+      <EntityTypeMapping TypeName="moocModel.stu_ans_count">
+        <MappingFragment StoreEntitySet="stu_ans_count">
+          <ScalarProperty Name="ec_id" ColumnName="ec_id" />
+          <ScalarProperty Name="anscount" ColumnName="anscount" />
+          <ScalarProperty Name="pq_id" ColumnName="pq_id" />
+          <ScalarProperty Name="stu_id" ColumnName="stu_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="paper_ques_count">
+      <EntityTypeMapping TypeName="moocModel.paper_ques_count">
+        <MappingFragment StoreEntitySet="paper_ques_count">
+          <ScalarProperty Name="anscount" ColumnName="anscount" />
+          <ScalarProperty Name="pq_id" ColumnName="pq_id" />
+          <ScalarProperty Name="ec_id" ColumnName="ec_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stupaperques_exam">
+      <EntityTypeMapping TypeName="moocModel.stupaperques_exam">
+        <MappingFragment StoreEntitySet="stupaperques_exam">
+          <ScalarProperty Name="stu_ans" ColumnName="stu_ans" />
+          <ScalarProperty Name="wrongtype" ColumnName="wrongtype" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="detail" ColumnName="detail" />
+          <ScalarProperty Name="output" ColumnName="output" />
+          <ScalarProperty Name="right_answer" ColumnName="right_answer" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="q_type" ColumnName="q_type" />
+          <ScalarProperty Name="eid" ColumnName="eid" />
+          <ScalarProperty Name="pqid" ColumnName="pqid" />
+          <ScalarProperty Name="stu_id" ColumnName="stu_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="feedback">
+      <EntityTypeMapping TypeName="moocModel.feedback">
+        <MappingFragment StoreEntitySet="feedback">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="anscount" ColumnName="anscount" />
+          <ScalarProperty Name="pq_id" ColumnName="pq_id" />
+          <ScalarProperty Name="ec_id" ColumnName="ec_id" />
+          <ScalarProperty Name="stu_id" ColumnName="stu_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="quesanswer">
+      <EntityTypeMapping TypeName="moocModel.quesanswer">
+        <MappingFragment StoreEntitySet="quesanswer">
+          <ScalarProperty Name="pqid" ColumnName="pqid" />
+          <ScalarProperty Name="nowvalue" ColumnName="nowvalue" />
+          <ScalarProperty Name="paper_id" ColumnName="paper_id" />
+          <ScalarProperty Name="chap_name" ColumnName="chap_name" />
+          <ScalarProperty Name="back_describe" ColumnName="back_describe" />
+          <ScalarProperty Name="detail" ColumnName="detail" />
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+          <ScalarProperty Name="totvalue" ColumnName="totvalue" />
+          <ScalarProperty Name="output" ColumnName="output" />
+          <ScalarProperty Name="check_sentence" ColumnName="check_sentence" />
+          <ScalarProperty Name="hard_level" ColumnName="hard_level" />
+          <ScalarProperty Name="ans6" ColumnName="ans6" />
+          <ScalarProperty Name="ans5" ColumnName="ans5" />
+          <ScalarProperty Name="ans4" ColumnName="ans4" />
+          <ScalarProperty Name="ans3" ColumnName="ans3" />
+          <ScalarProperty Name="ans2" ColumnName="ans2" />
+          <ScalarProperty Name="ans1" ColumnName="ans1" />
+          <ScalarProperty Name="right_answer" ColumnName="right_answer" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="q_type" ColumnName="q_type" />
+          <ScalarProperty Name="chap_id" ColumnName="chap_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stu_ans_log">
+      <EntityTypeMapping TypeName="moocModel.stu_ans_log">
+        <MappingFragment StoreEntitySet="stu_ans_log">
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="wronginfo" ColumnName="wronginfo" />
+          <ScalarProperty Name="score" ColumnName="score" />
+          <ScalarProperty Name="ans" ColumnName="ans" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stu_paperques">
+      <EntityTypeMapping TypeName="moocModel.stu_paperques">
+        <MappingFragment StoreEntitySet="stu_paperques">
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="wrongtype" ColumnName="wrongtype" />
+          <ScalarProperty Name="score" ColumnName="score" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="ans" ColumnName="ans" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_stu_ans_log_Toexam_class" TypeName="moocModel.FK_stu_ans_log_Toexam_class" StoreEntitySet="stu_ans_log">
+      <EndProperty Name="stu_ans_log">
+        <ScalarProperty Name="id" ColumnName="id" />
+      </EndProperty>
+      <EndProperty Name="exam_class">
+        <ScalarProperty Name="Id" ColumnName="ec_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_qpe_to_pq" TypeName="moocModel.FK_qpe_to_pq" StoreEntitySet="stu_paperques">
+      <EndProperty Name="stu_paperques">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <EndProperty Name="paper_ques">
+        <ScalarProperty Name="id" ColumnName="pq_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_stu_ans_log_Topaper_ques" TypeName="moocModel.FK_stu_ans_log_Topaper_ques" StoreEntitySet="stu_ans_log">
+      <EndProperty Name="stu_ans_log">
+        <ScalarProperty Name="id" ColumnName="id" />
+      </EndProperty>
+      <EndProperty Name="paper_ques">
+        <ScalarProperty Name="id" ColumnName="pq_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_stu_ans_log_Tostu_info" TypeName="moocModel.FK_stu_ans_log_Tostu_info" StoreEntitySet="stu_ans_log">
+      <EndProperty Name="stu_ans_log">
+        <ScalarProperty Name="id" ColumnName="id" />
+      </EndProperty>
+      <EndProperty Name="stu_info">
+        <ScalarProperty Name="id" ColumnName="stu_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_spq_to_stu_info" TypeName="moocModel.FK_spq_to_stu_info" StoreEntitySet="stu_paperques">
+      <EndProperty Name="stu_paperques">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <EndProperty Name="stu_info">
+        <ScalarProperty Name="id" ColumnName="stu_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="examfeedback">
+      <EntityTypeMapping TypeName="moocModel.examfeedback">
+        <MappingFragment StoreEntitySet="examfeedback">
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="score" ColumnName="score" />
+          <ScalarProperty Name="pq_id" ColumnName="pq_id" />
+          <ScalarProperty Name="ec_id" ColumnName="ec_id" />
+          <ScalarProperty Name="stu_id" ColumnName="stu_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stu_ans_score">
+      <EntityTypeMapping TypeName="moocModel.stu_ans_score">
+        <MappingFragment StoreEntitySet="stu_ans_score">
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="score" ColumnName="score" />
+          <ScalarProperty Name="ec_id" ColumnName="ec_id" />
+          <ScalarProperty Name="pq_id" ColumnName="pq_id" />
+          <ScalarProperty Name="stu_id" ColumnName="stu_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="exampaper">
+      <EntityTypeMapping TypeName="moocModel.exampaper">
+        <MappingFragment StoreEntitySet="exampaper">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="qcount" ColumnName="qcount" />
+          <ScalarProperty Name="isopen" ColumnName="isopen" />
+          <ScalarProperty Name="create_time" ColumnName="create_time" />
+          <ScalarProperty Name="paper_name" ColumnName="paper_name" />
+          <ScalarProperty Name="admin_tea" ColumnName="admin_tea" />
+          <ScalarProperty Name="israndom" ColumnName="israndom" />
+          <ScalarProperty Name="paper_id" ColumnName="paper_id" />
+          <ScalarProperty Name="exam_id" ColumnName="exam_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userapply">
+      <EntityTypeMapping TypeName="moocModel.userapply">
+        <MappingFragment StoreEntitySet="userapply">
+          <ScalarProperty Name="isdelete" ColumnName="isdelete" />
+          <ScalarProperty Name="cname" ColumnName="cname" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="tname" ColumnName="tname" />
+          <ScalarProperty Name="account" ColumnName="account" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="timeless">
+      <EntityTypeMapping TypeName="moocModel.timeless">
+        <MappingFragment StoreEntitySet="timeless">
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_time_exam_class" TypeName="moocModel.FK_time_exam_class" StoreEntitySet="timeless">
+      <EndProperty Name="timeless">
+        <ScalarProperty Name="id" ColumnName="id" />
+      </EndProperty>
+      <EndProperty Name="exam_class">
+        <ScalarProperty Name="Id" ColumnName="ec_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_time_stu_info" TypeName="moocModel.FK_time_stu_info" StoreEntitySet="timeless">
+      <EndProperty Name="timeless">
+        <ScalarProperty Name="id" ColumnName="id" />
+      </EndProperty>
+      <EndProperty Name="stu_info">
+        <ScalarProperty Name="id" ColumnName="stu_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="stu_exam_right_answer">
+      <EntityTypeMapping TypeName="moocModel.stu_exam_right_answer">
+        <MappingFragment StoreEntitySet="stu_exam_right_answer">
+          <ScalarProperty Name="ans6" ColumnName="ans6" />
+          <ScalarProperty Name="ans5" ColumnName="ans5" />
+          <ScalarProperty Name="ans4" ColumnName="ans4" />
+          <ScalarProperty Name="ans3" ColumnName="ans3" />
+          <ScalarProperty Name="ans2" ColumnName="ans2" />
+          <ScalarProperty Name="ans1" ColumnName="ans1" />
+          <ScalarProperty Name="q_type" ColumnName="q_type" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="right_answer" ColumnName="right_answer" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="stu_id" ColumnName="stu_id" />
+          <ScalarProperty Name="pq_id" ColumnName="pq_id" />
+          <ScalarProperty Name="ans" ColumnName="ans" />
+          <ScalarProperty Name="score" ColumnName="score" />
+          <ScalarProperty Name="ec_id" ColumnName="ec_id" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
+          <ScalarProperty Name="wronginfo" ColumnName="wronginfo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

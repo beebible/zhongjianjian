@@ -1,0 +1,68 @@
+﻿@model moocweb.Models.userapply
+@{
+    ViewBag.Title = "Apply";
+    Layout = "~/Views/Shared/_adminindex.cshtml";
+}
+<script>
+    
+    function agree(id) {
+        $.ajax({
+            url: '@Url.Action("Agree_Apply","Teacher")',
+            type: 'post',
+            data: {
+                id
+            },
+            success: function (r) {
+                if (r == "") {
+                    alert("批准申请");
+                    $("#cm").datagrid('reload');
+                } else {
+                    alert("批准失败\n" + r);
+                }
+            }
+        })
+    }
+    function remove(id) {
+        $.ajax({
+            url: '@Url.Action("Refuse_Apply","Teacher")',
+            type: 'post',
+            data: {
+                id
+                },
+            success: function (r) {
+                if (r == "") {
+                    alert("删除成功");
+                    $("#cm").datagrid('reload');
+                } else {
+                    alert("删除失败\n" + r);
+                }
+            }
+        })
+    }
+    function operation(val, row, index) {
+        return '<a href="#" style="color: #1db0b8;text-decoration: none;border:none;background:none;" onclick=' + "'agree(" + row.id + ")'>" + '同意' + '</a>' + ' | ' + '<a href="#" style="color: #1db0b8;text-decoration: none;border:none;background:none;" onclick=' + '"remove(' + row.id + ')">' + '删除' + '</a>';
+    }
+</script>
+<div style="width: 100%;height:100%;">
+    <table id="cm" title="<center>申请记录</center>" class="easyui-datagrid"
+           data-options="
+           fit:true,
+           rownumbers:true,
+           pagination:true,
+           singleSelect:true,
+           url:'/Teacher/Get_applyinfo',
+           method:'post',
+           striped:true">
+    <thead>
+        <tr>
+            <th data-options="field:'id',align:'center',hidden:true" width="13%">ID</th>
+            <th data-options="field:'cname',align:'center'" width="25%">学校</th>
+            <th data-options="field:'account',align:'center'" width="20%">登陆账号</th>
+            <th data-options="field:'tname',align:'center'" width="20%">真实姓名</th>
+            <th data-options="field:'email',align:'center'" width="25%">邮箱</th>
+            <th data-options="field:'delete',formatter:operation,align:'center'" width="10%">操作</th>
+        </tr>
+    </thead>
+    </table>
+</div>
+
